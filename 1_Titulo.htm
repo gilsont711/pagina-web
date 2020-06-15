@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TransporGT</title>
+</head>
+<body>
+   <!--<h1 style="color:blue; font: size 30px;">TransporGT </h1>--->
+   <link rel="stylesheet" href="Estilos.css">
+   <link rel="stylesheet" href="Colores.css">
+   <link rel="stylesheet" href="hover.css">
+   <!--<h1 id="MOD1">TransporGT</h1>-->
+   <nav><a href="#" class="Tema">TransporGT</a></nav>
+   <nav class="nav1"> 
+    <button class="nav-boton" onclick="accion()">Menu</button>
+    <a href="#" class="nav-enlace desaparece">Inicio</a>
+    <a href="#" class="nav-enlace desaparece">Informacion</a>
+    <a href="#" class="nav-enlace desaparece">Contactos</a>
+</nav>
+    <p class="MOD2"> <b>TransporGT</b> se encarga de transportar su producto a cualquier lugar del pais 
+        de forma segura.
+        <p> Dispone de vehiculos de carga pesada tipo plataforma y furgon para el servicio que 
+        requiera el cliente.</p> 
+        <ol>
+            <li>Servicio Basico</li>
+            <li>Servicio Estandar</li>
+            <li>Servicio Premiun</li>
+        </ol>
+        <a href="http://www.ecuadorlegalonline.com/consultas/agencia-nacional-de-transito/valores-a-pagar-por-matricula-matriculacion-vehicular/">
+        Consultar Matricula</a>
+       <p> <button>Solicitar Servicio</button> </p>
+    </p>
+    <img class="MODO" src="camion.jpg" alt="Error">
+    <!--
+    <ul>
+        <li>Plataforma</li>
+        <li>Furgon</li>
+    </ul>
+    -->
+    <section class="PADRE">
+        <p class="COLUMNA"><b> Servicio Basico </b> Se transportara su producto de forma segura, en nuestros vehiculos que se encuentren disponibles
+            al momento de prestar nuestro servicios. Ademas se tomara rutas adecuadas para la fiabilidad de su producto. 
+        </p>
+        <p class="COLUMNA"><b>Servicio Estandar</b> Se transportara su producto de forma segura. Con la prioridad de escoger el vehiculo a viajar y 
+            la hora exacta que desee nuestros servicios,
+        </p>
+        <p class="COLUMNA"><b>Serrvicio Premium</b> Se tranpostara su vehiculo de forma segura. Tendra la opcion de seleccionar el vehiculo a realizar el viaje,
+            la hora exacta que desea el servicio y se tomaran rutas optimas y fiables para la entrega rapida de su producto, ademas 
+            de que tenda la disposicion de un equipo de seguridad para la buena proteccion de su producto.
+        </p>
+    </section>
+    <script>
+        function accion(){
+            console.log('Esta funcionando mi boton');
+            var ancla = document.getElementsByClassName('nav-enlace');
+            for(var i=0; i<ancla.length; i++){
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+    </script>
+</body>
+</html>

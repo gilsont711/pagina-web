@@ -1,0 +1,72 @@
+#MOD1{
+    color: blueviolet;
+    font-size: 40px;
+    margin-left: 400px; margin-right: 700px;
+    /*background: tomato;
+    padding: 80; */
+}
+.MOD2{
+    color: rgb(134, 190, 120);
+    font-size: 20px;
+}
+.MODO{
+    margin-left: 200px;
+    margin-top: 10px;
+}
+.COLUMNA{
+    background: #f6416c;
+    color: #f8f3d4;
+    padding: 20px;
+    width: 25%;
+    margin: 10px;
+}
+.PADRE{
+    display: flex;
+}
+nav{
+    background: gray;
+}
+.Tema{
+    background: gray;
+    color: blue;
+    font-size: 40px;
+    text-decoration: none;
+}
+.nav-enlace{
+    display: inline-block;
+    background: salmon;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.nav-enlace:hover{
+    background: rosybrown;
+}
+.nav1{
+    background: #00b8a9;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around; /*Sirve para espaciar los enlaces*/
+}
+.nav-boton{
+    background: salmon;
+    color: #fff;
+    padding: 10px 0;
+    border: 2px solid #fff;
+    display: none;
+}
+@media (max-width: 600px) {
+    .nav1{
+        background: black;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin:  10px 0;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+}
